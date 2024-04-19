@@ -1,0 +1,178 @@
+
+
+* {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      
+      
+     
+      
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+   
+ 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(222, 87, 229);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin:auto;
+}
+
+.signup_1,.signup_2,.signup_3{
+  display: flex;
+  gap:2rem;
+}
+
+.sign_inp{
+  border-radius: 8px;
+  border: 1px solid green;
+}
+
+.signup_h1{
+  display: grid;
+  align-items: center;
+  margin: 1px 130px;
+}
+
+.signup_p{
+  display: flex;
+  width: 45%;
+  align-items: center;
+}
+
+.major_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top:220px;
+}
+
+.signup_img{
+  width: 30px;
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.para{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+span{
+  padding: 10px;
+  color: rgb(222, 87, 229);
+  font-weight: bolder;
+}
+
+.submit_btn{
+  width: 200px;
+  margin-top: 20px;
+  
+}
+
+.checkbox_div{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right:-10px;
+  margin-top: 30px;
+  width: 75%;
+  padding: 10px;
+  background-color: rgb(229, 244, 224);
+  border-radius: 16px;
+}
+
+#vehicle1{
+  width: 7%;
+}
+
+.radio_div{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right:-180px;
+  margin-top: 30px;
+  width: 75%;
+}
+
+#option1,#option2,#option3{
+  width: 5%;
+}
+
+.log_in p{
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.log_in a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  form{
+    width: 100%;
+  }
+  .signup_1,.signup_2,.signup_3{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    border-color: red;
+  }
+.radio_div{
+  margin-right: 240px;
+}
+input[type="email"]{
+  margin-bottom: 35px;
+}
+.signup_2 #lastName{
+  margin-bottom: 35px;
+}
+form{
+  margin-left: 25px;
+}
+}
+

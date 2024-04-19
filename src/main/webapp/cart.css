@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }*/
+        img{
+            height: 190px;
+            width: 250px;
+        }
+        input[type=text]{
+            height: 20px;
+            width: 40px;
+            text-align: center;
+           
+        }
+       .upper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        border: 2px solid red;
+        width: 700px;
+        margin-top: 108px;
+        margin-left:29%;
+        
+
+        z-index:-1;
+       }
+       .check{
+        position:absolute;
+        left: 29.5%;
+       }
+       input[type=number]
+       {
+        height: 15px;
+        width: 40px;
+        text-align: center;
+       }
+
+       .price{
+        color: #075eba;
+        font-weight: bolder;
+       }
+       
+       .pytm{
+  
+      
+       margin-top: 50px;
+       padding-left: 710px;
+    
+       }
+       footer{
+    text-align: center;
+    background-color:#4f3267 ;
+    color: white;
+    padding: 20px;
+    margin-top:20px;
+}

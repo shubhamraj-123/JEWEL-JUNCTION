@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+ <link rel="icon" href="logo.jpeg" />
+<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	body{
+	margin: 0;
+	padding: 0;
+	background:  #f6eff6;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.lBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	transform: translate(-50%,-50%);
+	background-color:#4f3267;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+.lBox h2{
+	text-align: center;
+	padding-top: 25px;
+	color: white;
+}
+.lBox form{
+	padding: 25px 29%;
+}
+.lBox form input{
+	width: 300px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.btn input[type=submit]{
+	color: black;
+	background-color: plum;
+}
+.btn input[type=submit]:hover{
+	background-color: #D8BFD8;
+}
+.lBox form p{
+	color: white;
+}
+</style>
+</head>
+<body>
+	<div class="lBox">
+		<h2>Administrator</h2>
+		<form action="logincheck.jsp" method="post">
+			<p>Username:</p> </br>
+			<input type="text" name="username" placeholder=" Enter Username" required></br> </br>
+			<p>Password:</p> </br>
+			<input type="password" name="password" required placeholder=" Enter password"> </br></br></br></br>
+			<div class="btn"><input type="submit" value="Sign In"></div>
+			
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+      
+form{
+  width: 300px;
+}
+
+.log_in p{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body{
+  position: fixed;
+}
+
+.major_div{
+  position: relative;
+  top: 20%;
+  left: 22%;
+}
+.signup_p{
+	text-align: justify;
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewel Junction Jewellery Website</title>
+    <link rel="stylesheet" href="./S_CSS/userbanner.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./S_CSS/tv.css" />
+    <link rel="stylesheet" href="./S_CSS/card.css" />
+    <link rel="stylesheet" href="./S_CSS/collection_switch.css" />
+    <link rel="stylesheet" href="./S_CSS/know_more.css" />
+    <link rel="stylesheet" href="./S_CSS/services.css" />
+    <link rel="stylesheet" href="./S_CSS/footer.css">
+    <link rel="icon" href="logo.jpeg" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      /*nav{
+            background: rgb(246, 239, 246);
+            height: 80px;
+            width: 100%;
+        }
+        
+        nav {
+            background-color:#3688e9;
+            border: 1px solid white;
+            justify-content:space-around;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: fixed;
+            height: 80px;
+            width: 100%;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+        }*/
+      .navigation {
+        position: fixed;
+        width: 100%;
+        height: 102px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        z-index: 5;
+
+        border: 1px solid white;
+        box-shadow: 1px 2px rgb(211, 194, 228);
+      }
+      .nav a {
+        margin: 20px;
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+        font-size: large;
+        font-weight: 500;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .nav a:hover {
+        color: rgb(244, 84, 167);
+        /*text-decoration: underline;*/
+        transform: scale(1.1);
+      }
+      .btn {
+        font-size: large;
+        width: 80px;
+        height: 40px;
+        font-weight: 200;
+        font-family: "Times New Roman", Times, serif;
+        margin: 15px;
+        background-color: transparent;
+        color: #4f3267;
+        border-radius: 110px;
+      }
+      .btn:hover {
+        /*background-image: linear-gradient(50deg, rgb(244, 68, 171), rgb(179, 243, 145));*/
+        /* background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+        background-color: #2949ff;
+		background-image: linear-gradient(43deg, #2949ff 0%, #fe1bf1 46%, #feff70 100%);
+        
+      }
+      .logo img {
+        width: 32%;
+        margin-left: 5%;
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .navtext a {
+        padding: 25px;
+        color: black;
+      }
+      .jeweljunction_carosel {
+        width: 100%;
+        position: relative;
+        height: 100%;
+      }
+      /*.jeweljunction_carosel img{
+        margin-top: 102px;
+        width: 100%;
+        height: 100%;
+      }*/
+      #slider-container {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        object-fit: cover;
+      }
+
+      #slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+      }
+
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .slide img {
+        margin-top: 102px;
+        width: 100%;
+      }
+      #prev,
+      #next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: rgb(128, 0, 0)     }
+
+      #prev {
+        left: 80px;
+      }
+      #next {
+        right: 80px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+        <label class="logo">JewelJunction</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav> -->
+    <div class="grand-par">
+      <nav class="navigation">
+        <div class="logo">
+          <img src="./images/logo2.jpg" alt="" />
+          <div class="navtext">
+            <a href="#">JEWEL JUNCTION</a>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="index.html">Home</a>
+          
+          <!-- <a href="#">About</a>-->
+          <a href="#servc">Services</a>
+          <a href="#f_con">Contact</a>
+          <a href="signin.jsp">Cart</a>
+          <a href="signin.jsp">Rings</a>
+          <a href="signin.jsp">Necklaces</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="./signin.jsp"><button class="btn">Sign in</button></a> 
+          <a href="./signup.jsp"><button class="btn">Sign up</button></a>   
+         <a href="./admin.html"><button class="btn">Admin</button></a>
+        </div>
+        
+      </nav>
+      
+      <div class="container">
+        <!-- <div class="jeweljunction_carosel">
+            <img src="./images/jewel.jpg" alt="">
+        </div> -->
+        <div id="slider-container">
+          <div id="slider">
+            <div class="slide">
+              <a href="signin.jsp"><img src="./images/jewel_slider.jpg" alt="Image 1" /></a>
+            </div>
+            <div class="slide">
+              <a href="signin.jsp"><img src="./images/jewel2_slider.jpg" alt="Image 2" /></a>
+            </div>
+            <div class="slide">
+              <a href="signin.jsp"><img src="./images/jewel3_slider.jpg" alt="Image 3" /></a>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <div id="prev">&lt;</div>
+          <div id="next">&gt;</div>
+        </div>
+      </div>
+
+      <!-- <div class="banner">
+        <img src="./images/jewel.jpg" alt="" />
+      </div> -->
+
+      <div class="row">
+        <div class="column">
+          <div class="item">
+            <a href="signin.jsp"><img src="./images/userbanner.jpg" alt="Image 1" /></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="item">
+            <a href="signin.jsp"><img src="./images/userbanner1.jpg" alt="Image 2" /></a>
+          </div>
+          <div class="item">
+            <a href="signin.jsp"><img src="./images/userbanner2.jpg" alt="Image 3" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!--TV     -->
+      <section class="contr">
+        <div class="bg-image">
+          <video
+            muted
+            autoplay
+            src="./S_CSS/videotv.webm"
+            class="video"
+          ></video>
+        </div>
+      </section>
+      <!-- Card_Jewelery_6_img -->
+      <div class="card_container">
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card1_jewel.jpg" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card2_jewel.jpg" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card3_jewel.jpg" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card4_jewel.jpg" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card5_jewel.jpg" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="signin.jsp"><img src="./images/card6_jewel.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Collection switch for more visting jewelery -->
+      <div class="collection_switch">
+        <div class="collection_switch_box">
+          <a href="signin.jsp"><img src="./images/Collection_switch_1.jpg" alt="" /></a>
+        </div>
+        <div class="collection_switch_box">
+          <a href="signin.jsp"><img src="./images/Collection_switch_2.jpg" alt="" /></a>
+        </div>
+        <div class="collection_switch_box">
+          <a href="signin.jsp"><img src="./images/Collection_Switch_3.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Know_more_jewelery -->
+      <div class="know_more_container">
+        <div class="know_more_box">
+          <a href="./signin.jsp"><img src="./images/know_more1.jpg" alt="" /></a>
+        </div>
+        <div class="know_more_box">
+          <a href="./signin.jsp"><img src="./images/know_more2.jpg" alt="" /></a>
+        </div>
+        <div class="know_more_box">
+          <a href="./signin.jsp"><img src="./images/know_more3.jpg" alt="" /></a>
+        </div>
+        <div class="know_more_box">
+          <a href="./signin.jsp"><img src="./images/know_more4.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Services.html -->
+      <div class="services" id="servc">
+        <div class="services_card">
+          <h2>Online Jewellery Store</h2>
+          <p class="text_desc">
+            Jewel Junction began in 2023 with the simple motto of democratising
+            jewellery. And today it has come to be recognised as one of the top
+            e-commerce portals in India. Steadily growing from strength to
+            strength since inception, Jewel Junction has also established 165
+            stores across the length and breadth of India.
+            <br /><br />
+            Since July 2023, we joined forces with India’s most desired and
+            largest jewellery brand, Tanishq, through a strategic investment
+            made by Titan Company in Jewel Junction. This takes us another step
+            closer to achieving our shared mission - to make beautiful jewellery
+            accessible to everyone.
+          </p>
+        </div>
+
+        <div class="services_card">
+          <h2>Shopping at Jewel Junction</h2>
+          <p class="text_desc">
+            Placing security first, Jewel Junction ensures that every transaction
+            made on the site is safe and smooth for the customers. To attain
+            this, the company follows stern policies of transparency through the
+            whole customer buying journey.
+            <br /><br />
+            For further convenience, all Jewel Junction products come backed with
+            certification from international laboratories, and a blanket
+            15-day-return policy, no questions asked.
+            <br /><br />
+            Jewel Junction provides the exquisite craftsmanship of beautiful
+            jewellery designs such as rings, earrings, pendants, necklace,
+            chains, bangles, bracelets, mangalsutra, nose pins. Apart from
+            jewellery, JewelJunction offers 22k (916) and 24k (995) gold coins
+            with certification and the guarantee of a BIS Hallmarked stamp.
+          </p>
+        </div>
+
+        <div class="services_card">
+          <h2>Jewel Junction's Vision</h2>
+          <p class="text_desc">
+            Jewel Junction works with the vision of offering designed jewellery
+            at revolutionary prices. This is achieved by eliminating all
+            inefficiencies which result in drastically reduced costs. Users
+            stand to save as much as 30% when compared to prices in the market.
+            <br /><br />
+            Our web is designed to bridge the vast gap between the virtual and
+            the physical world. This has been attained with the help of the
+            Virtual Try-on feature that permits the users to virtually put on
+            1000s of earrings to see just how they look when placed on the ears.
+            <br /><br />
+            With over 100 thousand downloads, the Jewel Junction app has emerged
+            to be one of the most liked applications in the jewellery circuit.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="f_container" id="f_con">
+            <div class="sec aboutus">
+                <h2>About us</h2>
+                <p>Welcome to Jewel Junction, where elegance meets craftsmanship. We take pride in curating a stunning collection of timeless jewelry that seamlessly blends contemporary design with traditional allure. Discover exquisite pieces that celebrate every moment and make a statement of enduring beauty. Welcome to a world where every jewel tells a story at Jewel Junction.</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Customer Service</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Know Your Jewellery</h2>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Gemstone Guide</a></li>
+                    <li><a href="#">Digital Gold</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i><p><a href="#">+1239454459</a></p></span>
+                    </li>
+    
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i><p><a href="#">www.jewel.junction.com</a></p></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>&copy; Copyright 2023 Jewel Junction. All rights reserved.</p>
+    </div>
+    </div>
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
+
+      document.getElementById("next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      });
+
+      document.getElementById("prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      });
+
+      function updateSlider() {
+        const newTransformValue = -currentIndex * 100 + "%";
+        document.getElementById(
+          "slider"
+        ).style.transform = `translateX(${newTransformValue})`;
+      }
+    </script>
+  </body>
+</html>

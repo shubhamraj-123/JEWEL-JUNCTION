@@ -1,0 +1,1 @@
+const hname=document.getElementById("hname").value;

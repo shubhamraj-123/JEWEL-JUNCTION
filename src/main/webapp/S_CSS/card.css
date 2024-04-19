@@ -1,0 +1,44 @@
+/* body {
+    margin: 0;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .row {
+    display: flex;
+    padding: 10px;  
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .item {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  .card_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.box img {
+    max-width: 100%;
+    /* margin-left: 13px;
+    margin-right: 16px; */
+}

@@ -1,0 +1,8 @@
+.know_more_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 12px;
+}
+.know_more_box img {
+    max-width: 100%;
+}

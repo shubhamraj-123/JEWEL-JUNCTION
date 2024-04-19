@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contr {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .bg-image { 
+    /* The image used */
+    background-image: url('./tv_design.jpg');
+  
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    /* background-position: left top; */
+    background-size: 100% 100%;
+    flex: 1;
+    height: 70%;
+    margin: 0%  1.2%;
+  }
+  .video{
+      width: 31.2%;
+      margin-left: 33.5%;
+      margin-top: 13.2%;
+      height: 30%;
+      object-fit: cover;
+  }
+  .video{
+    width: 65%;
+    height: 50.2%;
+    margin-top: 3.5%;
+    object-fit: cover;
+    margin-left: 16.9%;
+    border: 3px solid black;
+    align-items: center;
+    align-content: center;
+  }
